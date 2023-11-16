@@ -1,12 +1,13 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword("") {
+function generatePassword() {
   var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*abcdefghijklmnopqrstuvwxyz";
   
   let lengthAnswer = prompt("How many characters would you like? 8 - 128 ")
-  
-  for (var i = 0; i <= lengthAnswer; i++) {
+  let password = "";
+
+  for (var i = 0; i < lengthAnswer; i++) {
     var randomnum = Math.floor(Math.random() * charset.length);
     var generate = charset.substring(randomnum, randomnum +1);
     password += generate;
@@ -20,9 +21,9 @@ return password;
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  console.log(password);
   
-  var password ="";
+
   
   passwordText.value = password;
 }
