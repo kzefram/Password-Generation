@@ -29,6 +29,8 @@ This is a simple password generator that can use uppercase, lowercase, symbols, 
 
 ## Website and Pictures
 
+[Screen Shot with no Password](Assets/Screenshot-nopass.png)
+
 ## Installation
 
 There is no installation required as this is a static website.
