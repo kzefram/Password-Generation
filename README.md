@@ -29,7 +29,10 @@ This is a simple password generator that can use uppercase, lowercase, symbols, 
 
 ## Website and Pictures
 
+https://kzefram.github.io/Password-Generation/
+
 [Screen Shot with no Password](Assets/Screenshot-nopass.png)
+[Screen Shot with Password](Assets/Screenshot-withPass.png)
 
 ## Installation
 
@@ -57,4 +60,3 @@ https://github.com/users/kzefram/achievements/quickdraw
 https://github.com/users/kzefram/achievements/pull-shark
 
 https://github.com/users/kzefram/achievements/yolo
-

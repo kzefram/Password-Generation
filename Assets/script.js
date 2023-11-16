@@ -1,3 +1,7 @@
+// Karen Bourgeois
+// Module 3 Challenge
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
