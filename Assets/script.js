@@ -1,23 +1,30 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+function generatePassword("") {
+  var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&*abcdefghijklmnopqrstuvwxyz";
+  
+  let lengthAnswer = prompt("How many characters would you like? 8 - 128 ")
+  
+  for (var i = 0; i <= lengthAnswer; i++) {
+    var randomnum = Math.floor(Math.random() * charset.length);
+    var generate = charset.substring(randomnum, randomnum +1);
+    password += generate;
+  }
+
+return password;
+
+};
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
+
   
-  const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%&";
-
   var password ="";
-
-  for (var i = 0; i > 9; i++); {
-    const randomNum = Math.floor(Math.random() * charset.length);
-    password += charset[randomNum];
-    document.write(passwordText)
-  }
   
   passwordText.value = password;
-  
 }
 
 // Add event listener to generate button
